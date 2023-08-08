@@ -20,7 +20,7 @@ def edit(data, id):
      return data
           
 def sort(data):
-    data.sort(key = lambda x: x[["time"]])
+    data.sort(key = lambda x: x["time"])
     return data
 
 def printNotes(data):

@@ -1,7 +1,6 @@
-import View
-import FileHandler
 import Model
-
+import FileHandler
+import View
 
 
 
@@ -21,7 +20,7 @@ def main():
             FileHandler.save(data, file)
         elif ask == 3:
             data = FileHandler.read(file)
-            # sortedData = Model.sort(data)
+            data = Model.sort(data)
             Model.printNotes(data)
 
         elif ask == 4:
