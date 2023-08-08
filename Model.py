@@ -33,3 +33,25 @@ def printNotes(data):
                print(f'Body:{note["body"]}')
                print(f'Time:{note["time"]}')
                print("\n")
+
+def readNote(data, id):
+     for note in data:
+          if note["id"] == id:
+               print(f'ID:{note["id"]}')
+               print(f'Title:{note["title"]}')
+               print(f'Body:{note["body"]}')
+               print(f'Time:{note["time"]}')
+               print("\n")
+          else:
+               print("There is no note with that id")
+
+def timeNote(data, date):
+     date_notes = []
+     for note in data:
+          note_time = datetime.datetime.strptime(note["time"], '%Y-%m-%d')
+          if note_time.date() == date:
+               date_notes.append(note)
+     return date_notes
+          
+               
+          

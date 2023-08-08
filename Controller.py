@@ -11,33 +11,41 @@ def main():
 
     while work:
         ask = View.user_input()
-        print("\n")
+        print()
         if ask == 1:
-            print("\n")
             data = View.add(data)
             FileHandler.save(data, file)
+            print()
         elif ask == 2:
-            print("\n")
             ids = View.edit()
             data = Model.edit(data, ids)
             FileHandler.save(data, file)
+            print()
         elif ask == 3:
-            print("\n")
             data = FileHandler.read(file)
             data = Model.sort(data)
             Model.printNotes(data)
-
+            print()
         elif ask == 4:
-            print("\n")
+            idp = View.readNote()
+            print()
+            Model.readNote(data, idp)
+            print()
+        elif ask == 5:
+            data = FileHandler.read(file)
+            t = View.time()
+            f = Model.timeNote(data, t)
+            Model.printNotes(f)
+        elif ask == 6:
             request = View.delete()
             pop = Model.delete(data, request)
             FileHandler.save(pop, file)
-        elif ask == 5:
-            print("\n")
+            print()
+        elif ask == 7:
             View.exit()
             work = False
+            print()
         else:
-            print("\n")
             print("Try again")
             main()
         

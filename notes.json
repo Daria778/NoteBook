@@ -1,20 +1,26 @@
 [
     {
         "id": 1,
-        "title": "A simple principle",
-        "body": "Though Straton himself never used the term, his remark about the inescapable materiality of life - that like th bronze giant Talos...",
+        "title": "The human machine",
+        "body": "One day you discover that you are not a human being, but a machine...",
         "time": "2023-08-08"
     },
     {
         "id": 2,
         "title": "Talos Principle",
-        "body": "Whether it is true that Daedalus constructed the giant Talos, or as others say he was the creation of Hephaestus... ",
+        "body": "Whether it is true that Daedalus constructed the giant Talos....",
         "time": "2023-08-08"
     },
     {
         "id": 3,
-        "title": "The human machine",
-        "body": "One day you discover that you are not a human being, but a machine....",
+        "title": "Error",
+        "body": "CANNOT LOAD ARCHIVE",
+        "time": "2023-08-08"
+    },
+    {
+        "id": 4,
+        "title": "Singularity discussion 104",
+        "body": "You know, the more i think about it, the more i believe that no-one is actually worried about Ais taking over the world...",
         "time": "2023-08-08"
     }
 ]
